@@ -59,6 +59,11 @@ Array inbuf -> INBUFSIZE;
   numopts = optionlist-->0 / 2;
   printmenu = 1;
   
+  if (1 == 0) {
+    ! The presence of @sound_effect has Inform set bit 7 of Flags 2.
+    @sound_effect 3 3 3;
+  }
+
   while (1) {
     if (printmenu) {
       print "Options: (hit Enter by itself to display this menu)^";

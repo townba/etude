@@ -48,10 +48,10 @@
   }
 
   if (val & 32) {
-    print "Interpreter claims that sound effects ARE available.^";
+    print "Interpreter claims that V6 sound effects ARE available.^";
   }
   else {
-    print "Interpreter claims that sound effects ARE NOT available.^";
+    print "Interpreter claims that V6 sound effects ARE NOT available.^";
   }
 
   if (val & 128) {
@@ -69,5 +69,12 @@
   }
   else {
     print "Interpreter claims that ~undo~ IS NOT available.^";
+  }
+
+  if (val & 128) {
+    print "Interpreter claims that V5 sound effects ARE available.^";
+  }
+  else {
+    print "Interpreter claims that V5 sound effects ARE NOT available.^";
   }
 ];
